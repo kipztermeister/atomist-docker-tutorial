@@ -24,7 +24,7 @@ jobs:
       if: ${{ ! env.docker_username }}
       shell: bash
       # ${{ github.repository }}"
-      run: echo "IMAGE=ghcr.io/kipztermesiter/my-images/atomist-docker-tutorial" >> $GITHUB_ENV
+      run: echo "IMAGE=ghcr.io/kipztermeister/my-images/atomist-docker-tutorial" >> $GITHUB_ENV
       id: set_repo_if_ghcr   
 
     - name: Log in to Docker Hub
