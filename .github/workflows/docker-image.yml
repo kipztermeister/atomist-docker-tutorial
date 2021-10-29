@@ -23,7 +23,7 @@ jobs:
     - name: Set Docker Repository name (GHCR version)
       if: ${{ ! env.docker_username }}
       shell: bash
-      run: echo "IMAGE=ghcr.io/${{ github.repository }}" >> $GITHUB_ENV
+      run: echo "IMAGE=ghcr.io/kipz/${{ github.repository }}" >> $GITHUB_ENV
       id: set_repo_if_ghcr   
 
     - name: Log in to Docker Hub
